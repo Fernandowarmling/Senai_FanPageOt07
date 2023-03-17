@@ -1,8 +1,8 @@
 /***Pagina Principal Index ***/
 
 /*** Corpo da pagina ***/
-body{
-    margin:auto;
+body {
+    margin: auto;
     background-color: #f6cca5;
 
 }
@@ -13,16 +13,18 @@ body{
     max-height: 200px;
     min-height: 0px;
     height: 180px;
-    border-bottom: 10px solid #792a49;
+    //border-bottom: 10px solid #792a49;
+
+
 }
 
 .tituloCabecalho {
     margin: 0;
     padding: 2.5%;
-    text-align:center;
+    text-align: center;
     font-size: 300%;
     color: #000000;
- 
+
 }
 
 
@@ -39,14 +41,14 @@ body{
 
 .logoEsquerda {
     float: left;
-    margin-left: 15%;    
+    margin-left: 15%;
     max-width: 100%;
     max-height: 100%;
     width: auto;
     height: auto;
 }
 
-#InverteImagem{
+#InverteImagem {
     -moz-transform: scaleX(-1);
     -o-transform: scaleX(-1);
     -webkit-transform: scaleX(-1);
@@ -55,29 +57,65 @@ body{
 
 /***Menu***/
 
-nav{
+nav {
     clear: both;
     width: 80%;
     margin: 0px auto;
-    height: 180px;
+    height: 40px;
 }
 
-nav a{
+nav a {
     color: #000000;
     text-decoration: none;
     text-align: center;
 }
 
-nav .opcao_menu{
+nav .opcao_menu {
     float: left;
     width: 31.3%;
     background-color: #792a49;
-    color: #ffffff    ;
-    padding: 10px 0;
+    color: #ffffff;
+    padding: 5px 0;
     margin: 0 1%;
+    border-radius: 15px;
     font-size: 26px;
 }
 
-nav .opcao_menu:hover{
+nav .opcao_menu:hover {
     background-color: #4e1f3c;
+}
+
+/*** Section ***/
+
+section {
+    clear: both;
+    min-height: 60px;
+    width: 100%;
+    margin-top: 0px;
+
+}
+
+section .tituloDaSecao {
+    font-size: 26px;
+    text-align: center;
+}
+
+section .textoDeSecao {
+    font-size: 18px;
+    text-align: justify;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+
+
+/*** Rodape ***/
+
+footer {
+    text-align: center;
+    margin-top: 263px;
+    margin-bottom: 0px;
+    background-color: #792a49;
+    color: #ffffff;
+    padding: 10px;
 }
