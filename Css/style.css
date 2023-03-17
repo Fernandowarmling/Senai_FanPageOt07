@@ -1,8 +1,83 @@
 /***Pagina Principal Index ***/
 
-/*** Cabecalho ***/
-.cabecalho{
+/*** Corpo da pagina ***/
+body{
+    margin:auto;
+    background-color: #f6cca5;
 
-    background: fixed;
-    background-color: burlywood;
+}
+
+/*** Cabecalho ***/
+.cabecalho {
+    background-color: #f6cca5;
+    max-height: 200px;
+    min-height: 0px;
+    height: 180px;
+    border-bottom: 10px solid #792a49;
+}
+
+.tituloCabecalho {
+    margin: 0;
+    padding: 2.5%;
+    text-align:center;
+    font-size: 300%;
+    color: #000000;
+ 
+}
+
+
+
+.logo {
+    float: right;
+    margin-right: 15%;
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+
+}
+
+.logoEsquerda {
+    float: left;
+    margin-left: 15%;    
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+}
+
+#InverteImagem{
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+
+/***Menu***/
+
+nav{
+    clear: both;
+    width: 80%;
+    margin: 0px auto;
+    height: 180px;
+}
+
+nav a{
+    color: #000000;
+    text-decoration: none;
+    text-align: center;
+}
+
+nav .opcao_menu{
+    float: left;
+    width: 31.3%;
+    background-color: #792a49;
+    color: #ffffff    ;
+    padding: 10px 0;
+    margin: 0 1%;
+    font-size: 26px;
+}
+
+nav .opcao_menu:hover{
+    background-color: #4e1f3c;
 }
