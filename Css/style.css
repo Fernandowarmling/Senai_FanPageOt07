@@ -8,12 +8,12 @@ body {
 }
 
 /*** Cabecalho ***/
-.cabecalho {
+.cabecalho{
     background-color: #f6cca5;
     max-height: 200px;
     min-height: 0px;
     height: 180px;
-    //border-bottom: 10px solid #792a49;
+    /*border-bottom: 10px solid #792a49;*/
 
 
 }
@@ -26,9 +26,6 @@ body {
     color: #000000;
 
 }
-
-
-
 .logo {
     float: right;
     margin-right: 15%;
