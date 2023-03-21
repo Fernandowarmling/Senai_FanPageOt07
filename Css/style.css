@@ -8,7 +8,7 @@ body {
 }
 
 /*** Cabecalho ***/
-.cabecalho{
+.cabecalho {
     background-color: #f6cca5;
     max-height: 200px;
     min-height: 0px;
@@ -26,6 +26,7 @@ body {
     color: #000000;
 
 }
+
 .logo {
     float: right;
     margin-right: 15%;
@@ -45,7 +46,14 @@ body {
     height: auto;
 }
 
-#InverteImagem {
+#InverteImagemEsquerda {
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+
+#InverteImagemDireita {
     -moz-transform: scaleX(-1);
     -o-transform: scaleX(-1);
     -webkit-transform: scaleX(-1);
@@ -115,4 +123,62 @@ footer {
     background-color: #792a49;
     color: #ffffff;
     padding: 10px;
+}
+
+
+/*** Paginas Raças ***/
+
+.imagemCard {
+    width: 250px;
+    height: 250px;
+
+}
+
+.imagemCardVirada {
+    width: 250px;
+    height: 250px;
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+
+.card {
+    width: 300px;
+    background-color: white;
+    border-radius: 5px;
+    border: 3px solid #445674;
+}
+
+.card:hover {
+    background-color: #000000;
+    color: white;
+    transition: all .3s;
+    -webkit-box-shadow: 4px 6px 32px 3px rgba(226, 0, 0, 0.75);
+    -moz-box-shadow: 4px 6px 32px 3px rgba(240, 10, 10, 0.75);
+    box-shadow: 4px 6px 32px 3px rgba(243, 3, 3, 0.75);
+}
+
+.item {
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: fantasy;
+    text-transform: uppercase;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.flipper{
+	transition: transform 0.8s;
+	transform-style: preserve-3d;
+}
+
+.cards:hover .flipper{
+	transform: rotateY(180deg);
 }
