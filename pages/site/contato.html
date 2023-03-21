@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Site Bom Bovino">
+    <meta name="keywords" content="Reprodução,Bovinos,Taurinos">
+    <meta name="author" content="Fernando Warmling">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raças de Gado</title>
+    <link rel="stylesheet" type="text/css" href="../../Css/style.css">
+</head>
+
+<body>
+    <header class="cabecalho">
+        <img class="logoEsquerda" id="InverteImagemDireita" src="../../Img/Braford.png" alt="Logo Bom Bovino esquerda">
+        <img class="logo" id="InverteImagemEsquerda" src="../../Img/jersey.png" alt="Logo Bom Bovino direita">
+        <h1 class="tituloCabecalho">Raças Bovinas</h1>
+    </header>
+    <nav>
+        <a href="../../index.html">
+            <div class="opcao_menu">Principal</div>
+        </a>
+        <a href="racas.html">
+            <div class="opcao_menu">Raças</div>
+        </a>
+        <a href="contato.html">
+            <div class="opcao_menu">Contato</div>
+        </a>
+    </nav>
+    <section>
+        <div>
+            <h2 class="tituloDaSecao">Fale Conosco !</h2>
+        </div>
+        <div>
+            <p class="textoDeSecao">Para fins de melhoria da sua experiencia com nosso site segue formulario para postar
+                melhorias e criticas.
+            </p>
+        </div>
+        <div>
+            <form name="frmContato" method="post" action="#">
+            <fieldset class="formulario">
+                <legend>Dados Pessoais:</legend>
+                <label for="nome">Nome:</label>
+                <input type="text" name="txtnome" id="nome">
+                <label for="fone">Telefone</label>
+                <input type="text" name="txtfone" id="fone">
+                <label for="email">E-mail:</label>
+                <input type="email" name="txtemail" id="email">
+            </fieldset>
+            <fieldset  class="formulario">
+                <legend>Motivo Contato:</legend>
+                <label for="motivo">Motivo:</label>
+                <select name="selmotivo" id="motivo">
+                    <option value="">Escolha</option>
+                    <option value="RE">Reclamação</option>
+                    <option value="SU">Sugestão de melhoria</option>
+                    <option value="OS">Outras Situações</option>
+                </select>
+                <label for="comentario">Comentario:</label>
+                <textarea name="txacomenterio" id="comentario"></textarea>
+                <button type="reset">Limpar</button><button type="submit">Enviar</button>
+            </fieldset>
+        </form>
+        </div>
+    </section>
+    <footer>Copyright &copy; Fernando Warmling 2023</footer>
+</body>
+
+</html>
