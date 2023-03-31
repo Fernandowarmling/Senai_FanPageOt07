@@ -9,13 +9,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Raças de Gado</title>
-    <link rel="stylesheet" type="text/css" href="../../Css/style.css">
+    <link rel="stylesheet" type="text/css" href="../../css/style.css">
+    <script src="../../js/site.js"></script>
 </head>
 
 <body>
     <header class="cabecalho">
-        <img class="logoEsquerda" id="InverteImagemDireita" src="../../Img/Braford.png" alt="Logo Bom Bovino esquerda">
-        <img class="logo" id="InverteImagemEsquerda" src="../../Img/jersey.png" alt="Logo Bom Bovino direita">
+        <img class="logoEsquerda" id="InverteImagemDireita" src="../../img/Braford.png" alt="Logo Bom Bovino esquerda">
+        <img class="logo" id="InverteImagemEsquerda" src="../../img/jersey.png" alt="Logo Bom Bovino direita">
         <h1 class="tituloCabecalho">Raças Bovinas</h1>
     </header>
     <nav>
@@ -39,7 +40,7 @@
             </p>
         </div>
         <div>
-            <form name="frmContato" method="post" action="#">
+            <form name="frmContato" method="post" action="#" onsubmit="return validaFaleConosco()">
                 <fieldset class="formulario">
                     <legend>Dados Pessoais:</legend>
                     <label for="nome">Nome:</label>
@@ -52,12 +53,12 @@
                     <input type="date" name="txtdate" id="date">
                 </fieldset>
 
-                <fieldset class="formularioRadio">
-                    <legend>Orientação Sexual:</legend>
-                    <label for="masculino">Masculino</label>
-                    <input type="radio" name="sexo" id="selecionar">
-                    <label for="feminino">Feminino</label>
-                    <input type="radio" name="sexo" id="selecionar">
+                <fieldset class="formularioRadio"> 
+                    <legend>Sexo:</legend>
+                    <label for="sexo">Masculino</label>
+                    <input type="radio" name="sexo" id="masculino" value="Masculino">
+                    <label for="sexo">Feminino</label>
+                    <input type="radio" name="sexo" id="feminino" value="Feminino">
                 </fieldset>
 
                 <fieldset class="formularioAssociacao">
@@ -76,7 +77,7 @@
                         <option value="OS">Outras Situações</option>
                     </select>
                     <label for="comentario">Comentario:</label>
-                    <textarea name="txacomenterio" id="comentario"></textarea>
+                    <textarea name="txacomentario" id="comentario"></textarea>
                     <button type="reset">Limpar</button><button type="submit">Enviar</button>
                 </fieldset>
             </form>
