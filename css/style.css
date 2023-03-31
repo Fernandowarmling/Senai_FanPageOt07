@@ -4,61 +4,65 @@
 body {
     margin: auto;
     background-color: #f6cca5;
+    max-width: auto;
+    
 
 }
 
 /*** Cabecalho ***/
 .cabecalho {
-    background-color: #f6cca5;
-    max-height: 200px;
-    min-height: 0px;
-    height: 180px;
-    /*border-bottom: 10px solid #792a49;*/
-
-
+    display: flex;
+    gap: 20px;
+    flex-wrap: nowrap;
+    height: 270px;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: flex-start;
 }
 
 .tituloCabecalho {
-    margin: 0;
+    /*margin: 0;*/
     padding: 2.5%;
-    text-align: center;
-    font-size: 300%;
+    text-align: center ;
+    font-size: 200%;
     color: #000000;
 
 }
 
 .logo {
-    float: right;
+    /*float: right;
     margin-right: 15%;
     max-width: 100%;
     max-height: 100%;
     width: auto;
-    height: auto;
-
+    height: auto;*/
+    width: 260px;
+    height: 260px;
+    background-color: #f6cca5;
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
 }
 
 .logoEsquerda {
-    float: left;
+   /* float: left;
     margin-left: 15%;
     max-width: 100%;
     max-height: 100%;
     width: auto;
-    height: auto;
-}
-
-#InverteImagemEsquerda {
+    height: auto;*/
+    width: 260px;
+    height: 260px;
+    background-color: #f6cca5;
     -moz-transform: scaleX(-1);
     -o-transform: scaleX(-1);
     -webkit-transform: scaleX(-1);
     transform: scaleX(-1);
 }
 
-#InverteImagemDireita {
-    -moz-transform: scaleX(-1);
-    -o-transform: scaleX(-1);
-    -webkit-transform: scaleX(-1);
-    transform: scaleX(-1);
-}
+
+
 
 /***Menu***/
 
@@ -129,14 +133,14 @@ footer {
 /*** Paginas Raças ***/
 
 .imagemCard {
-    width: 290px;
-    height: 290px;
+    width: 240px;
+    height: 240px;
     background-color: #f6cca5;
 }
 
 .imagemCardVirada {
-    width: 290px;
-    height: 290px;
+    width: 240px;
+    height: 240px;
     -moz-transform: scaleX(-1);
     -o-transform: scaleX(-1);
     -webkit-transform: scaleX(-1);
@@ -192,18 +196,20 @@ footer {
     border: 5px solid #792a49;
 }
 
-.formulario input, .formulario textarea, .formulario select{
+.formulario input,
+.formulario textarea,
+.formulario select {
     margin: 5px auto;
     width: 100%;
     padding: 5px 0;
-} 
+}
 
-.formulario textarea{
+.formulario textarea {
     height: 100px;
     resize: none;
 }
 
-.formulario button{
+.formulario button {
     width: 30%;
     margin: 0 10%;
     background-color: #792a49;
@@ -213,7 +219,7 @@ footer {
 
 }
 
-.formularioRadio{
+.formularioRadio {
     width: 300px;
     margin: 0px auto;
     font-weight: bold;
@@ -221,10 +227,10 @@ footer {
     border-radius: 5px;
     border: 5px solid #792a49;
     text-align: -webkit-center;
-   
+
 }
 
-.formularioAssociacao{
+.formularioAssociacao {
     width: 300px;
     margin: 0px auto;
     font-weight: bold;
@@ -232,5 +238,5 @@ footer {
     border-radius: 5px;
     border: 5px solid #792a49;
     text-align: -webkit-center;
-   
+
 }
