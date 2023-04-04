@@ -8,8 +8,8 @@ function validaFaleConosco() {
         return false;
     }*/
 
-    var nome = document.frmContato.txtnome.value;
-    var expRegNome = new RegExp("^[A-zÀ-ü]{3,}([ ]{1}[A-zÀ-ü]{2,})+$");
+    let nome = document.frmContato.txtnome.value;
+    let expRegNome = new RegExp("^[A-zÀ-ü]{3,}([ ]{1}[A-zÀ-ü]{2,})+$");
 
     if (!expRegNome.test(nome)) {
         alert("Preencha o campo Nome corretamente");
@@ -25,8 +25,8 @@ function validaFaleConosco() {
         return false;
     }*/
 
-    var fone = document.frmContato.txtfone.value;
-    var expRegFone = new RegExp("^[(]{1}[1-9]{2}[)]{1}[0-9]{4,5}[-]{1}[0-9]{4}$");
+    let fone = document.frmContato.txtfone.value;
+    let expRegFone = new RegExp("^[(]{1}[1-9]{2}[)]{1}[0-9]{4,5}[-]{1}[0-9]{4}$");
 
     if (!expRegFone.test(fone)) {
         alert("Preencha o campo Telefone corretamente");
@@ -43,8 +43,8 @@ function validaFaleConosco() {
 
     }*/
 
-    var email = document.frmContato.txtemail.value;
-    var expRegEmail = new RegExp("^[A-z0-9._]{3,}[@]{1,}[A-z]{3,}[.com]+$");
+    let email = document.frmContato.txtemail.value;
+    let expRegEmail = new RegExp("^[A-z0-9._]{3,}[@]{1,}[A-z]{3,}[.com]+$");
     if (!expRegEmail.test(email)) {
         alert("Preencha o campo E-mail corrertamente");
         document.frmContato.txtemail.focus();
@@ -66,7 +66,7 @@ function validaFaleConosco() {
     }
 
     /* valida associação */
-    var check = false
+    let check = false
     if (document.getElementById("associar").checked) {
         check = true
     }
@@ -77,32 +77,22 @@ function validaFaleConosco() {
     }
 
     /* valida comentario */
-    var textocomentario = document.frmContato.txacomentario.value;
-    var expRegComentario = new RegExp("^[A-zÀ-ü0-9]{3,}+$");
+    
     if (document.frmContato.selmotivo.value != "") {
         /* if (document.frmContato.txacomentario.value == "") {
-             alert("Preencha o campo Comentario");
-             document.frmContato.txacomentario.focus();
-             return false;
-         }*/
+        alert("Preencha o campo Comentario");
+        document.frmContato.txacomentario.focus();
+        return false;
+    }*/
+        let textocomentario = document.frmContato.txacomentario.value;
+        let expRegComentario = new RegExp("[0-9A-zÀ-ü]{3,}");
         if (!expRegComentario.test(textocomentario)) {
             alert("Preencha o campo Comentario corrertamente");
             document.frmContato.txacomentario.focus();
             return false;
         }
-
-
-
-
     }
 
-    /* var textocomentario = document.frmContato.txacomentario.value;
-     var expRegComentario = new RegExp("^[A-zÀ-ü0-9]{3,}+$");
-     if (!expRegComentario.test(textocomentario)) {
-         alert("Preencha o campo Comentario corrertamente");
-         document.frmContato.txacomentario.focus();
-         return false;
-     }*/
-    return true;
+    /*return true;*/
 }
 
