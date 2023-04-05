@@ -96,3 +96,10 @@ function validaFaleConosco() {
     /*return true;*/
 }
 
+
+$(document).ready(function(){
+    $("header").load("/pages/site/general/header.html");
+    $("nav").load("/pages/site/general/menu.html");
+    $("footer").load("/pages/site/general/footer.html");
+})
+

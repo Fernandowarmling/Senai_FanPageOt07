@@ -1,9 +1,23 @@
 /***Pagina Principal Index ***/
+:root{
+  --cor-backgroudpagina :#DCD7C9;
+  --cor-borda:#2C3639;
+  --cor-textobase:#000000;
+  --cor-menusecards:#ffffff;
+  --cor-hover:#3F4E4F;
+
+
+}
+
+/*{
+    padding: 0;
+    margin: 0;
+}*/
 
 /*** Corpo da pagina ***/
 body {
     margin: auto;
-    background-color: #f6cca5;
+    background-color: var(--cor-backgroudpagina);
     max-width: auto;
     
 
@@ -25,7 +39,7 @@ body {
     padding: 2.5%;
     text-align: center ;
     font-size: 200%;
-    color: #000000;
+    color: var(--cor-textobase);
 
 }
 
@@ -38,7 +52,7 @@ body {
     height: auto;*/
     width: 260px;
     height: 260px;
-    background-color: #f6cca5;
+    background-color: var(--cor-backgroudpagina);
     -moz-transform: scaleX(-1);
     -o-transform: scaleX(-1);
     -webkit-transform: scaleX(-1);
@@ -54,7 +68,7 @@ body {
     height: auto;*/
     width: 260px;
     height: 260px;
-    background-color: #f6cca5;
+    background-color: var(--cor-backgroudpagina);
     -moz-transform: scaleX(-1);
     -o-transform: scaleX(-1);
     -webkit-transform: scaleX(-1);
@@ -74,7 +88,7 @@ nav {
 }
 
 nav a {
-    color: #000000;
+    color:var(--cor-textobase);
     text-decoration: none;
     text-align: center;
 }
@@ -82,8 +96,8 @@ nav a {
 nav .opcao_menu {
     float: left;
     width: 31.3%;
-    background-color: #792a49;
-    color: #ffffff;
+    background-color: var(--cor-borda);
+    color: var(--cor-menusecards);
     padding: 5px 0;
     margin: 0 1%;
     border-radius: 15px;
@@ -91,7 +105,7 @@ nav .opcao_menu {
 }
 
 nav .opcao_menu:hover {
-    background-color: #4e1f3c;
+    background-color: var(--cor-hover);
 }
 
 /*** Section ***/
@@ -124,8 +138,8 @@ footer {
     text-align: center;
     margin-top: 263px;
     margin-bottom: 0px;
-    background-color: #792a49;
-    color: #ffffff;
+    background-color: var(--cor-borda);
+    color: var(--cor-menusecards);
     padding: 10px;
 }
 
@@ -135,7 +149,7 @@ footer {
 .imagemCard {
     width: 240px;
     height: 240px;
-    background-color: #f6cca5;
+    background-color: var(--cor-backgroudpagina);
 }
 
 .imagemCardVirada {
@@ -145,14 +159,14 @@ footer {
     -o-transform: scaleX(-1);
     -webkit-transform: scaleX(-1);
     transform: scaleX(-1);
-    background-color: #f6cca5;
+    background-color: var(--cor-backgroudpagina);
 }
 
 .card {
     width: 300px;
-    background-color: #792a49;
+    background-color: var(--cor-borda);
     border-radius: 10px;
-    border: 5px solid #792a49;
+    border: 5px solid var(--cor-borda);
 }
 
 .item {
@@ -168,12 +182,12 @@ footer {
 }
 
 .card:hover {
-    background-color: #4e1f3c;
+    background-color: var(--cor-hover);
 }
 
 .tituloCard {
     text-align: center;
-    color: #ffffff;
+    color: var(--cor-menusecards);
     text-transform: uppercase;
 
 }
@@ -181,7 +195,7 @@ footer {
 .informacaoCard {
     font-size: 20px;
     text-align: justify;
-    color: #ffffff;
+    color: var(--cor-menusecards);
 }
 
 
@@ -193,7 +207,7 @@ footer {
     font-weight: bold;
     margin-bottom: 10px;
     border-radius: 5px;
-    border: 5px solid #792a49;
+    border: 5px solid var(--cor-borda);
 }
 
 .formulario input,
@@ -212,8 +226,8 @@ footer {
 .formulario button {
     width: 30%;
     margin: 0 10%;
-    background-color: #792a49;
-    color: #ffffff;
+    background-color: var(--cor-borda);
+    color: var(--cor-menusecards);
     font-size: 16px;
     font-weight: bold;
 
@@ -225,7 +239,7 @@ footer {
     font-weight: bold;
     margin-bottom: 10px;
     border-radius: 5px;
-    border: 5px solid #792a49;
+    border: 5px solid var(--cor-borda);
     text-align: -webkit-center;
 
 }
@@ -236,7 +250,7 @@ footer {
     font-weight: bold;
     margin-bottom: 10px;
     border-radius: 5px;
-    border: 5px solid #792a49;
+    border: 5px solid var(--cor-borda);
     text-align: -webkit-center;
 
 }
